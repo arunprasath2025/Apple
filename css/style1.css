@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	margin-left: 10vw;
+	margin-right: 10vw;
+	overflow: none;
+}
+
+:root{
+	font-size: 14px;
+}
+
+.navigation{
+	width: 100%;
+	height: 50px;
+	font-size: 1.5rem;
+	background: #fff;
+	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.8px solid #ccc;
+}
+
+#iphone12{
+	margin-left: 10vw;
+}
+
+#iphone-price{
+	margin-right: 10vw;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 600px 600px;
+}
+
+@media screen and (max-width: 600px){
+	.grid-container{
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+	}
+}
+
+/*----phone images----*/
+.image-container{
+	margin: 5vh 0;
+	height: 550px;
+	width: 400px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: vertical;
+}
+
+.order-container{
+	margin: 15vh 0;
+	width: 400px;
+}
+
+#buy-iphone{
+	font-size: 2.7rem;
+	font-weight: 900;
+	margin-bottom: 40px;
+}
+
+#choose-iphone{
+	font-weight: 900;
+	font-size: 1.2rem;
+}
+
+#which-iphone{
+	margin-top: 10px;
+	color: #0088ff;
+	cursor: pointer;
+}
+
+.item-container{
+	height: 80px;
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.item-container:hover{
+	border: 1px solid #666;
+}
+
+#item-title{
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+#item-details{
+	font-size: 0.8rem;
+	color: #333;
+}
+
+#item-price{
+	font-size: 1.3rem;
+	color: #333;
+}
+
+#line{
+	content: "";
+	background: #ccc;
+	width: 100%;
+	height: 0.8px;
+	margin: 30px 0;
+}
+
+.finish-container{
+	display: grid;
+	grid-template-columns: 195px 195px;
+	grid-gap: 10px;
+	margin-top: 15px;
+}
+
+.color-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	border: 0.8px solid #ccc;
+	border-radius: 12px;
+	font-size: 0.8rem;
+}
+
+.purple-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #bf80ff;
+}
+
+.blue-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #006699;
+}
+
+.green-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #ccffe6;
+}
+
+.white-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #f1f1f1;
+}
+
+.black-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #313131;
+}
+
+.red-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #ff3333;
+}
+
+.color-container:hover{
+	border: 1px solid #666;
+}
+
+.capacity-container{
+	display: grid;
+	grid-template-columns: 195px 195px;
+	grid-gap: 10px;
+	margin-top: 15px;
+}
+
+.storage-size{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	border: 0.8px solid #ccc;
+	border-radius: 12px;
+}
+
+.storage-size:hover{
+	border: 1px solid #666;
+}
+
+#storage-capacity{
+	font-size: 2rem;
+}
+
+#storage-capacity:after{
+	content: "GB";
+	font-size: 1.3rem;
+}
+
+#storage-price{
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.bag-container{
+	margin: 50px 0;
+	background: #fafafa;
+	padding: 30px;
+}
+
+.bag-price{
+	font-size: 2.2rem;
+	font-weight: 900;
+}
+
+.delivery-container{
+	display: flex;
+}
+
+.delivery-section{
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+	color: #111;
+	margin-left: 10px;
+}
+
+#cube{
+	font-size: 1.5rem;
+}
+
+#get-delivery{
+	color: #0088ff;
+}
+
+.bag-button{
+	background: #0088ff;
+	color: #fff;
+	width: 100%;
+	font-size: 1.3rem;
+	padding: 5px 0;
+	border: none;
+	border-radius: 5px;
+	margin: 30px 0;
+	cursor: pointer;
+}
+
+.bag-button:hover{
+	opacity: 0.95;
+}
+
+.still-deciding{
+	display: flex;
+	font-size: 1rem;
+}
+
+#bookmark{
+	color: #0088ff;
+	font-size: 2rem;
+	cursor: pointer;
+}
